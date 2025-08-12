@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "nucseq-optimizer"
+version = "0.1.0"
+description = "Protein-DNA structure prediction and DNA sequence optimization using Chai-1"
+authors = ["Adam"]
+license = "Apache-2.0"
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pyyaml = "^6.0.2"
+rich = "^14.1.0"
+chai_lab = {version = "0.6.1", optional = true}
+
+[tool.poetry.extras]
+# Install Chai-1 only on supported Linux GPU machines
+chai = ["chai_lab"]
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^25.1.0"
+ruff = "^0.12.8"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,16 @@
+molecules:
+  - type: protein
+    copies: 2
+    chain_ids: [A, B]
+    sequence: >-
+      LNRESVIDAALELLNETGIDGLTTRKLAQKLGIEQPTLYWHVKNKRALLDALAVEILARHHDYSLPAAGESWQSFLRNNAMSFRRALLRYRDGAKVHLGTRPDEKQYDTVETQLRFMTENGFSLRDGLYAISAVSHFTLGAVLEQQEHTAALTDRPAAPDENLPPLLREALQIMDSDDGEQAFLHGLESLIRGFEVQLTALLQ
+  - type: dna
+    copies: 1
+    chain_ids: [C]
+    sequence: TCCCTATCAGTGATAGAGA
+    include_reverse_complement: false
+  - type: dna
+    copies: 1
+    chain_ids: [D]
+    sequence: TCTCTATCACTGATAGGGA
+    include_reverse_complement: false
